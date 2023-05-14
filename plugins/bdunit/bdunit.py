@@ -30,6 +30,7 @@ class BDunit(Plugin):
         super().__init__()
         try:
             curdir = os.path.dirname(__file__)
+            print("curdir is ", curdir)
             config_path = os.path.join(curdir, "config.json")
             conf = None
             if not os.path.exists(config_path):
